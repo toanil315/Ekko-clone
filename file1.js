@@ -16,16 +16,14 @@ demoMenuDisplay.onclick = function () {
 }
 var nav = document.getElementById("navbar");
 nav.style.boxShadow = "none";
-document.getElementById("wrapper").onscroll = function() {displayBoxShadow()};
 
-function displayBoxShadow() {
-    var y = document.getElementById("wrapper").scrollTop;
+window.addEventListener("scroll", function() {
+    var y  = window.pageYOffset;
     if(y !== 0) {
         nav.style.boxShadow = "0 3px 10px rgba(0,0,0, 0.1)";
     }
     else {
         nav.style.boxShadow = "none";
     }
-}
-
-
+    
+})

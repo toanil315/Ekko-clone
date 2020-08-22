@@ -18,14 +18,14 @@ html {
 *::before,
 *::after {
     box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    
 }
 
 img {
     display: block;
     max-width: 100%;
 }
+
 
 a {
     display: block;
@@ -34,10 +34,9 @@ a {
 
 #wrapper {
     max-width: var(--warapper);
-    height: 100vh;
     margin-left: auto;
     margin-right: auto;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 .container {
